@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="https://jakarta.ee/xml/ns/jakartaee"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/beans_4_0.xsd">
+
+    <alternatives>
+        <class>com.metehan.java_ioc_cdi_springboot_1.alternative.MyAlternativeImpOne</class>
+        <!--<class>com.metehan.java_ioc_cdi_springboot_1.alternative.MyAlternativeImpTwo</class>-->
+    </alternatives>
+
+    <interceptors>
+        <class>com.metehan.java_ioc_cdi_springboot_1.interceptor.MyTraceInterceptor</class>
+        <class>com.metehan.java_ioc_cdi_springboot_1.interceptor.multiple.MyCountInterceptorAscending</class>
+        <class>com.metehan.java_ioc_cdi_springboot_1.interceptor.multiple.MyCountInterceptorDescending</class>
+    </interceptors>
+
+</beans>

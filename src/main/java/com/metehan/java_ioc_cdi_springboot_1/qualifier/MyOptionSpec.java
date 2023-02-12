@@ -1,0 +1,6 @@
+package com.metehan.java_ioc_cdi_springboot_1.qualifier;
+
+public interface MyOptionSpec {
+
+    public String myOperation(String string);
+}
